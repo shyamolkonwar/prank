@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Workshop Exam - Top 20 Viva Questions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #dee2e6;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #0d6efd;
+    }
+
+    .main-content {
+      background: #fff;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #212529;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      color: #6c757d;
+      font-size: 14px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .info-section {
+      margin-bottom: 30px;
+    }
+
+    .info-section h2 {
+      font-size: 18px;
+      color: #495057;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .syllabus-list {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 4px solid #0d6efd;
+    }
+
+    .syllabus-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .syllabus-list li {
+      padding: 8px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .syllabus-list li:before {
+      content: "•";
+      color: #0d6efd;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .download-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .download-section h2 {
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .download-section p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+
+    .download-btn {
+      background: #fff;
+      color: #667eea;
+      border: none;
+      padding: 15px 40px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .pdf-icon {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    .note {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      color: #856404;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #6c757d;
+      font-size: 13px;
+    }
+
+    /* Prank overlay - hidden by default */
+    .prank-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .prank-overlay.active {
+      display: flex;
+      animation: flashIn 0.5s ease-in-out;
+    }
+
+    @keyframes flashIn {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .prank-text {
+      color: #fff;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Prevent any interaction when prank is active */
+    body.pranked {
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .prank-overlay.active {
+      pointer-events: all;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="logo">📚 IT Workshop Exam Resources</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <h1>Top 20 Viva Questions - IT Workshop Exam</h1>
+      <div class="subtitle">Comprehensive preparation guide for tomorrow's examination</div>
+
+      <div class="info-section">
+        <h2>📋 Exam Syllabus Coverage</h2>
+        <div class="syllabus-list">
+          <ul>
+            <li><strong>Introduction to SCILAB:</strong> SCILAB interface, variables, keywords, commands, operators
+              (arithmetic, relational, logical, bitwise)</li>
+            <li><strong>Vectors and Matrices in SCILAB:</strong> Creation, deletion, access, manipulation, special
+              matrices, complex matrix, matrix commands, matrix operations (determinant, minor, inverse, rank,
+              eigenvalue and vectors)</li>
+            <li><strong>Introduction to Python:</strong> Basic concepts and syntax</li>
+            <li><strong>Conditional Statements in Python:</strong> IF, IF-ELSE, nested IF-ELSE statements</li>
+            <li><strong>Iteration and Loops:</strong> FOR loop, WHILE loop, control statements (break, continue, pass)
+            </li>
+            <li><strong>Functions in Python:</strong> Arguments (required, keyword, default, variable-length), creating
+              functions, return statement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h2>📝 About This Resource</h2>
+        <p>This PDF contains the <strong>Top 20 Most Important Viva Questions</strong> compiled from previous year
+          examinations and expert faculty recommendations. Each question includes:</p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+          <li>Detailed answer explanation</li>
+          <li>Code examples (where applicable)</li>
+          <li>Key points to remember</li>
+          <li>Common mistakes to avoid</li>
+        </ul>
+      </div>
+
+      <div class="download-section">
+        <h2>📥 Download Your Free PDF</h2>
+        <p>Get instant access to all 20 viva questions with detailed answers</p>
+        <button class="download-btn" id="downloadBtn">
+          <span class="pdf-icon">📄</span>
+          Download PDF Now
+        </button>
+      </div>
+
+      <div class="note">
+        <strong>⚠️ Important:</strong> This resource is specifically designed for tomorrow's IT Workshop Exam. Make sure
+        to review all questions thoroughly. Good luck with your preparation!
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 IT Workshop Exam Resources | Prepared by Senior Students</p>
+      <p style="margin-top: 5px;">Last updated: December 2024</p>
+    </div>
+  </div>
+
+  <!-- Prank Overlay -->
+  <div class="prank-overlay" id="prankOverlay">
+    <div class="prank-text" id="prankText">🎉 GOTCHA! 🎉</div>
+  </div>
+
+  <!-- Audio element - replace with your audio file -->
+  <audio id="prankAudio" preload="auto" loop>
+    <source src="mouning2.m4a" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+    const prankOverlay = document.getElementById('prankOverlay');
+    const prankAudio = document.getElementById('prankAudio');
+    const prankText = document.getElementById('prankText');
+
+    // Preload audio
+    prankAudio.load();
+
+    // Set volume to maximum
+    prankAudio.volume = 1.0;
+
+    downloadBtn.addEventListener('click', function () {
+      // Activate prank
+      document.body.classList.add('pranked');
+      prankOverlay.classList.add('active');
+
+      // Play audio at maximum volume
+      prankAudio.volume = 1.0;
+      const playPromise = prankAudio.play();
+
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.log('Audio play failed:', err);
+        });
+      }
+
+      // Create infinite loop to prevent closing
+      let prankMessages = [
+        '🎉 GOTCHA! 🎉',
+        '😂 YOU GOT PRANKED! 😂',
+        'Made by Sonkalpa',
+        '🤣 NICE TRY! 🤣',
+        '😈 HAHAHA! 😈',
+        '🎊 PRANKED! 🎊',
+        '😜 FOOLED YOU! 😜'
+      ];
+
+      let messageIndex = 0;
+      setInterval(() => {
+        prankText.textContent = prankMessages[messageIndex];
+        messageIndex = (messageIndex + 1) % prankMessages.length;
+      }, 2000);
+
+      // Prevent any escape attempts
+      document.addEventListener('keydown', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }, true);
+
+      // Prevent context menu
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        return false;
+      }, true);
+
+      // Keep audio playing even if they try to pause
+      prankAudio.addEventListener('pause', function () {
+        prankAudio.play();
+      });
+
+      prankAudio.addEventListener('volumechange', function () {
+        prankAudio.volume = 1.0;
+      });
+
+      // Infinite alert loop (commented out as it might be too harsh)
+      // setTimeout(() => {
+      //   function infiniteAlert() {
+      //     alert('😂 YOU GOT PRANKED! Close the browser to stop! 😂');
+      //     setTimeout(infiniteAlert, 100);
+      //   }
+      //   infiniteAlert();
+      // }, 3000);
+
+      // Prevent back button
+      history.pushState(null, null, location.href);
+      window.onpopstate = function () {
+        history.go(1);
+      };
+    });
+
+    // Prevent closing tab with confirmation (works in some browsers)
+    window.addEventListener('beforeunload', function (e) {
+      if (document.body.classList.contains('pranked')) {
+        e.preventDefault();
+        e.returnValue = '';
+        return '';
+      }
+    });
+  </script>
+</body>
+
+</html>
